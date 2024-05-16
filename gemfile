@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'faraday'
+gem 'oj'
+gem 'nokogiri'
+gem 'addressable'
