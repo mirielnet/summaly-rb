@@ -75,6 +75,8 @@ end
 
 get '/' do
   url = params['url']
+  return "summaly-rb" unless url  # URLが提供されていない場合は "summaly-rb" を返す
+
   lang = params['lang']
   user_agent = params['userAgent'] || CONFIG[:user_agent]
   timeout = [CONFIG[:timeout], (params['responseTimeout'] || CONFIG[:timeout]).to_i].min
